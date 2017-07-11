@@ -1,1 +1,1 @@
-FROM kong:latest
+FROM kong

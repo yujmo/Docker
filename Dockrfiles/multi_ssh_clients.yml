@@ -1,0 +1,22 @@
+version : '3.0'
+services:
+        sshd1:   
+                image: ubuntu:16.04
+                ports:
+                 - "11001:22"
+        sshd2:   
+                image: ubuntu:16.04
+                ports:
+                 - "11002:22"
+        sshd3:   
+                image: ubuntu:16.04
+                ports:
+                 - "11003:22"
+        sshd4:   
+                image: ubuntu:16.04
+                ports:
+                 - "11004:22"
+        sshd5:   
+                image: ubuntu:16.04
+                ports:
+                 - "11005:22"

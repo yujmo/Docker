@@ -7,4 +7,3 @@ RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 22 
 CMD ["/usr/bin/supervisord"]
-

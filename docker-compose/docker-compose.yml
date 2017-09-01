@@ -1,0 +1,7 @@
+version : '3.0'
+services:
+  dwsftp:   
+    image: yujmo/dwsftp:latest
+    ports:
+      - "10022:22"
+      - "10080:80"

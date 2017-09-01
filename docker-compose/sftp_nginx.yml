@@ -1,0 +1,15 @@
+version : '2.0'
+services:
+        sftp:   
+                image: yujmo/sftp:latest
+                ports:
+                        - "10022:22"
+                volumes: 
+                        - /root/upload/:/opt/sftp/web/upload/
+        nginx:
+                image: yujmo/nginx:latest
+                ports:
+                        - "10080:80"
+                volumes_from:
+                        - sftp
+

@@ -1,22 +1,5 @@
 version : '3.0'
 services:
-        sshd1:   
-                image: yujmo/sshd:6
-                ports:
-                 - "11001:22"
-        sshd2:   
-                image: yujmo/sshd:6
-                ports:
-                 - "11002:22"
-        sshd3:   
-                image: yujmo/sshd:6
-                ports:
-                 - "11003:22"
-        sshd4:   
-                image: yujmo/sshd:6
-                ports:
-                 - "11004:22"
-        sshd5:   
-                image: yujmo/sshd:6
-                ports:
-                 - "11005:22"
+    etcd1:
+        image: yujmo/etcd:latest
+        privileged: true

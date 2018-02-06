@@ -10,4 +10,6 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 VOLUME [ "/sys/fs/cgroup" ]
+RUN yum clean all && yum update -y && yum install openssh openssh-server -y && systemctl enable sshd
+
 #CMD ["/usr/sbin/init"]

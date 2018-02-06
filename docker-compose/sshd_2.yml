@@ -1,0 +1,9 @@
+services:
+    sshd1:
+        image: yujmo/centos:latest
+        privileged: true
+        command: /usr/sbin/init
+    sshd2:
+        image: yujmo/centos:latest
+        privileged: true
+        command: /usr/sbin/init

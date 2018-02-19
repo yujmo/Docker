@@ -1,0 +1,18 @@
+version: '2'
+services:
+    'adm':
+        image: yujmo/base:16.04
+        privileged: true
+        command: /usr/sbin/init 
+    'mon':
+        image: yujmo/base:16.04
+        privileged: true
+        command: /usr/sbin/init 
+    'osd1': 
+        image: yujmo/base:16.04
+        privileged: true
+        command: /usr/sbin/init 
+    'osd2':
+        image: yujmo/base:16.04
+        privileged: true
+        command: /usr/sbin/init 
